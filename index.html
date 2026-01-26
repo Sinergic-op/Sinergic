@@ -5,13 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sinèrgic</title>
     <style>
-        /* Seleccionamos todos los h1 */
+        /* Hacemos que el body tenga 2 veces la altura de la pantalla */
+        body {
+            height: 200vh; /* 2 veces la altura de la pantalla */
+            margin: 0;     /* eliminamos márgenes por defecto */
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #fff3e0, #fcd5b4); /* opcional, un degradado bonito */
+        }
+
+        /* Estilo del título */
         h1 {
-            font-family: 'Arial', sans-serif; /* Tipo de letra */
-            font-size: 48px;                  /* Tamaño */
-            color: #d25b10;                   /* Color opcional */
-            text-align: center;                /* Centrado horizontal */
-            margin-top: 50px;                  /* Mueve hacia abajo */
+            font-family: 'Arial', sans-serif;
+            font-size: 48px;
+            color: #d25b10;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* Barra de scroll personalizada (opcional) */
+        body::-webkit-scrollbar {
+            width: 12px;
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: #d25b10;
+            border-radius: 6px;
         }
     </style>
 </head>
@@ -19,3 +37,4 @@
     <h1>Burraaaaa!!!</h1>
 </body>
 </html>
+
