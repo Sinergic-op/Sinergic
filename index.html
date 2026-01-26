@@ -5,15 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sinèrgic</title>
     <style>
-        /* Hacemos que el body tenga 2 veces la altura de la pantalla */
-        body {
-            height: 200vh; /* 2 veces la altura de la pantalla */
-            margin: 0;     /* eliminamos márgenes por defecto */
-            font-family: Arial, sans-serif;
-            background: linear-gradient(to bottom, #eb0404, #0413ec); /* opcional, un degradado bonito */
-        }
-
-        /* Estilo del título */
+        /* Estilo del título principal */
         h1 {
             font-family: 'Arial', sans-serif;
             font-size: 48px;
@@ -22,19 +14,26 @@
             margin-top: 50px;
         }
 
-        /* Barra de scroll personalizada (opcional) */
-        body::-webkit-scrollbar {
-            width: 12px;
+        /* Estilo del enlace que parece un título */
+        .titulo-enlace {
+            text-decoration: none;   /* Quita el subrayado */
+            color: #d25b10;          /* Color del título */
+            font-family: 'Arial', sans-serif;
         }
 
-        body::-webkit-scrollbar-thumb {
-            background-color: #d25b10;
-            border-radius: 6px;
+        .titulo-enlace:hover {
+            color: #ff8000;          /* Cambio de color al pasar el cursor */
         }
     </style>
 </head>
 <body>
     <h1>Burraaaaa!!!</h1>
+
+    <!-- Nuevo título que funciona como enlace a opciones.html -->
+    <h1>
+        <a href="opciones.html" class="titulo-enlace">Opciones</a>
+    </h1>
 </body>
 </html>
+
 
