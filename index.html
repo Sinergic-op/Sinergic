@@ -28,17 +28,15 @@
             color: #ff8000;          /* Cambio de color al pasar el cursor */
         }
 
-        .contenedor-imagen {
-            height: 100vh;           /* Altura total de la pantalla */
-            display: flex;
-            justify-content: center; /* Centrado horizontal */
-            align-items: flex-end;   /* Imagen en la mitad inferior */
-        }
-
         .imagen-centro {
+            position: fixed;
+            top: 50vh;              /* Mitad de la pantalla */
+            left: 50%;
+            transform: translateX(-50%);
             max-width: 80%;
             height: auto;
         }
+
 
     </style>
 </head>
@@ -49,11 +47,7 @@
     <h1>
         <a href="opciones.html" class="titulo-enlace">Descobreix</a>
     </h1>
-
-    <!-- Imagen centrada en la pantalla -->
-    <div class="contenedor-imagen">
     <img src="Captura de pantalla 2026-01-26 192204.png" alt="Imagen" class="imagen-centro">
-    </div>
 
 </body>
 </html>
