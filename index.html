@@ -28,11 +28,16 @@
             color: #ff8000;          /* Cambio de color al pasar el cursor */
         }
 
+        .contenedor-imagen {
+            height: 100vh;           /* Altura total de la pantalla */
+            display: flex;
+            justify-content: center; /* Centrado horizontal */
+            align-items: flex-end;   /* Imagen en la mitad inferior */
+        }
+
         .imagen-centro {
-            display: block;
-            margin: 50vh auto 0 auto; /* Empuja la imagen a la mitad de la pantalla */
-            max-width: 80%;          /* Para que no sea demasiado grande */
-            height: auto;            /* Mantiene la proporción */
+            max-width: 80%;
+            height: auto;
         }
 
     </style>
@@ -46,7 +51,9 @@
     </h1>
 
     <!-- Imagen centrada en la pantalla -->
-     <img src="Captura de pantalla 2026-01-26 192204.png" alt="Imagen descriptiva" class="imagen-centro">
+    <div class="contenedor-imagen">
+    <img src="Captura de pantalla 2026-01-26 192204.png" alt="Imagen" class="imagen-centro">
+    </div>
 
 </body>
 </html>
